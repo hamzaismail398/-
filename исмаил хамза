@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int last_digit;
+
+   
+    std::cout << "Enter the last digit of the number (0-9): ";
+    std::cin >> last_digit;
+
+    
+    if (last_digit < 0 || last_digit > 9) {
+        std::cout << "Error: Please enter a number between 0 and 9." << std::endl;
+        return 1; 
+    }
+
+    
+    int square_last_digit = (last_digit * last_digit) % 10;
+
+    
+    std::cout << "The last digit of the square of a number: " << square_last_digit << std::endl;
+
+    return 0;
+}
