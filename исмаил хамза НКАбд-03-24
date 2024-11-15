@@ -2,35 +2,35 @@
 #include <string.h>
 
 int main() {
-    char zone[3]; // Array to store the tariff zone
-    double cost;  // Variable to store the cost per minute
+    char zone[3]; 
+    double cost;  
 
-    // Prompt the user to enter the tariff zone
+    
     printf("Enter the tariff zone number (1, I, II, III, IV, V, VI): ");
     scanf("%s", zone);
 
-    // Determine the cost based on the tariff zone
+    
     if (strcmp(zone, "1") == 0) {
-        cost = 0.5; // Cost for zone 1
+        cost = 0.5; 
     } else if (strcmp(zone, "I") == 0) {
-        cost = 1.0; // Cost for zone I
+        cost = 1.0; 
     } else if (strcmp(zone, "II") == 0) {
-        cost = 1.5; // Cost for zone II
+        cost = 1.5; 
     } else if (strcmp(zone, "III") == 0) {
-        cost = 2.0; // Cost for zone III
+        cost = 2.0; 
     } else if (strcmp(zone, "IV") == 0) {
-        cost = 2.5; // Cost for zone IV
+        cost = 2.5; 
     } else if (strcmp(zone, "V") == 0) {
-        cost = 3.0; // Cost for zone V
+        cost = 3.0; 
     } else if (strcmp(zone, "VI") == 0) {
-        cost = 3.5; // Cost for zone VI
+        cost = 3.5; 
     } else {
         printf("Error: Invalid tariff zone input.n");
-        return 1; // Exit the program with an error code
+        return 1; 
     }
 
-    // Output the cost per minute of the call
+    
     printf("Cost per minute for tariff zone %s: %.2f rub.n", zone, cost);
 
-    return 0; // Exit the program successfully
+    return 0; 
 }
